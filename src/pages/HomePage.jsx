@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom"
 import useProjects from "../components/hooks/useProjects";
 import ProjectCard from "../components/ProjectCard";
 import "./styles.css"
 
 function HomePage() {
     const { projects } = useProjects();
+    console.log("projects", projects)
 
     return (
         <div id="project-list">

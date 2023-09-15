@@ -1,25 +1,28 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from"react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import HomePage from "./pages/HomePage"
 import ProjectPage from './pages/ProjectPage';
 import LoginPage from "./pages/LoginPage";
 import NavBar from "./components/NavBar"
+import { AuthProvider } from "./components/AuthProvider";
 
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <NavBar />,
     children: [
-      { path:"/",element:<HomePage />},
+      { path: "/", element: <HomePage /> },
       { path: "/login", element: <LoginPage /> },
-      { path: "/project/:id", element: <ProjectPage /> },    ]
+      { path: "/project/:id", element: <ProjectPage /> },]
   }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

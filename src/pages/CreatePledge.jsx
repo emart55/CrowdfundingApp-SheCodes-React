@@ -1,11 +1,7 @@
 import { useState } from "react";
-import postLogin from "../api/postLogin";
-import { useNavigate } from "react-router-dom";
-import { useAuth } from "../components/hooks/use-auth";
+import postPledge from "../api/postLogin";
 
-function LoginForm() {
-    const navigate = useNavigate();
-    const { auth, setAuth } = useAuth();
+function CreatePledge() {
     const [credentials, setCredentials] = useState({
         username: "",
         password: "",
@@ -26,11 +22,7 @@ function LoginForm() {
                 credentials.username,
                 credentials.password
             ).then((response) => {
-                window.localStorage.setItem("token", response.token);
-                setAuth({
-                    token: response.token,
-                });
-                navigate("/");
+                console.log(response);
             });
         }
     };
@@ -62,4 +54,4 @@ function LoginForm() {
     );
 }
 
-export default LoginForm;
+export default CreatePledge; 
