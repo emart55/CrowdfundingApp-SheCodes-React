@@ -11,6 +11,9 @@ function LoginForm() {
         password: "",
     });
 
+    const [errorMessage, setErrorMessage] = useState("");
+    const [formIsInvalid, setFormIsInvalid] = useState("");
+
     const handleChange = (event) => {
         const { id, value } = event.target;
         setCredentials((prevCredentials) => ({
@@ -55,9 +58,12 @@ function LoginForm() {
                     onChange={handleChange}
                 />
             </div>
-            <button type="submit" onClick={handleSubmit}>
+            <button type="submit" className="button" onClick={handleSubmit}>
                 Login
             </button>
+            <p className="error-message">{errorMessage}</p>
+            <sub className={errorMessage ? "" : "hidden"}>Please check your username and password.</sub>
+            <p>{formIsInvalid}</p>
         </form>
     );
 }

@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage"
 import ProjectPage from './pages/ProjectPage';
 import LoginPage from "./pages/LoginPage";
 import NavBar from "./components/NavBar"
+import AboutPage from "./pages/AboutPage";
 import { AuthProvider } from "./components/AuthProvider";
 
 const router = createBrowserRouter([

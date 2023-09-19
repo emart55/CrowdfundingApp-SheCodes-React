@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import useProject from "../components/hooks/useProject";
-import CreatePledge from "./CreatePledge";
+
 
 function ProjectPage () {
     const { id } = useParams();
