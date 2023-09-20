@@ -62,7 +62,7 @@ function LoginForm() {
                 Login
             </button>
             <p className="error-message">{errorMessage}</p>
-            <sub className={errorMessage ? "" : "hidden"}>Please check your username and password.</sub>
+            <sub className={errorMessage ? "" : "hidden"}>Please check your credentials are correct.</sub>
             <p>{formIsInvalid}</p>
         </form>
     );

@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage"
 import ProjectPage from './pages/ProjectPage';
 import LoginPage from "./pages/LoginPage";
 import NavBar from "./components/NavBar"
+import CreateAccountPage from "./pages/CreateAccountPage";
 import AboutPage from "./pages/AboutPage";
 import { AuthProvider } from "./components/AuthProvider";
 
@@ -14,9 +15,26 @@ const router = createBrowserRouter([
     path: "/",
     element: <NavBar />,
     children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/login", element: <LoginPage /> },
-      { path: "/project/:id", element: <ProjectPage /> },]
+      {
+        path: "/",
+        element: <HomePage />
+      },
+      {
+        path: "/login",
+        element: <LoginPage />
+      },
+      {
+        path: "/createaccount",
+        element: <CreateAccountPage />
+      },
+      {
+        path: "/project/:id",
+        element: <ProjectPage />
+      },
+      {
+        path: "/about",
+        element: <AboutPage />
+      },]
   }
 ])
 
