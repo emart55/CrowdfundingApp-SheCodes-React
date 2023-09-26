@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import postProject from "../../api/post-project";
+import postProject from "../api/postProject"
 
 function ProjectForm() {
   const navigate = useNavigate();
@@ -70,7 +70,7 @@ function ProjectForm() {
         <textarea
           id="description"
           name="description"
-          placeholder="What do you want to tell your advocats?"
+          placeholder="Description to help people find it?"
           onChange={handleChange}
         />
       </div>
@@ -92,7 +92,7 @@ function ProjectForm() {
           type="url"
           id="image"
           name="image"
-          placeholder="https://image-link.advocat"
+          placeholder="https://via.placeholder.com/300.jpg"
           onChange={handleChange}
         />
       </div>

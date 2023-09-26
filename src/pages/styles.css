@@ -1,9 +1,46 @@
-.project-list {
+.project-card {
+    width: 100%; 
+    border: 3px solid rgb(68, 122, 202);
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    box-shadow: 0px 0px 5px rgb(128, 128, 128);
+  }
+  
+  /* Add a media query for smaller screens */
+  @media (max-width: 768px) {
+    .project-card {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
     }
+  }  
 
+.project-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 
-    
+.buttons-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px 0; 
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #3db8d7;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #292727; 
+  }
+  

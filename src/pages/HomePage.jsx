@@ -10,25 +10,20 @@ function HomePage() {
   const { auth } = useAuth();
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <p>Loading.</p>;
   }
   if (error) {
     return <p>{error.message}</p>;
   }
 
   return (
-    <div>
-      <div id="project-list">
-        {projects
-          .filter((project) => project["is_open"])
-          .map((projectData, key) => (
-            <ProjectCard key={key} projectData={projectData} />
-          ))}
-      </div>
+    <div className="home-container">
+      {auth.token && <p><b>Welcome back!</b></p>}
+      
       <div className="buttons-container">
         {auth.token ? (
-          <Link to="/new-project" className="button">
-            Start Fundraising
+          <Link to="/newprojectpage" className="button">
+            LendAHand & Start Fundraising
           </Link>
         ) : (
           <Link to="/login" className="button">
@@ -38,6 +33,15 @@ function HomePage() {
         <Link to="/projects" className="button">
           Explore More Projects
         </Link>
+      </div>
+
+      <div className="project-list">
+        {projects
+          .filter((project) => project["is_open"])
+          .slice(0, 8)
+          .map((projectData, key) => (
+            <ProjectCard key={key} projectData={projectData} />
+          ))}
       </div>
     </div>
   );

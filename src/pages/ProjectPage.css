@@ -1,0 +1,56 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c3e9f3; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(174, 54, 54, 0.1);
+  }
+  
+  .project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(106, 128, 201); 
+  }
+  
+  .project-info {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333; 
+  }
+  
+  .pledge-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pledge-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f5f5f5; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .pledge-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pledge-amount {
+    font-weight: bold;
+    color: lightseagreen; 
+  }
+  
+  .pledge-supporter {
+    margin-top: 10px;
+    color: #666666; 
+  }
+  
+  .pledge-comment {
+    margin-top: 10px;
+    color: #333; 
+  }
+  
