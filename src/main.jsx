@@ -9,7 +9,7 @@ import NavBar from "./components/NavBar"
 import CreateAccountPage from "./pages/CreateAccountPage";
 import AboutPage from "./pages/AboutPage";
 import NewProjectPage from './pages/NewProjectPage';
-import ProjectsPage from "./pages/projectsPage"
+import ProjectsPage from "./pages/ProjectsPage"
 import CreatePledgePage from './pages/CreatePledgePage';
 import { AuthProvider } from "./components/AuthProvider";
 
