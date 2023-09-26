@@ -1,6 +1,6 @@
 # <p align="center"> She-Codes-React </p>
 
-# <p align="center"> LendAHand <br><br>![image info goes here](screenshots/Screenshot%202023-08-13%20at%207.19.10%20pm.png)</p>
+# <p align="center"> LendAHand <br><br>![image info goes here](./src/Screenshots/Screenshot%202023-08-13%20at%207.19.10%20pm.png)</p>
 
 <p align="center">
   By Emiy Martin.
@@ -11,7 +11,7 @@
 The purpose of this website is to create a crowdfunding platform focused on providing support to people with disabilities. The target audience is individuals who are passionate about making a positive impact in the lives of people with disabilities by offering their time / resources or financial contributions.
 
 *  A link to the deployed project.
-
+https://singular-fudge-1694e8.netlify.app
 
 *  A screenshot of the homepage.
 ![image info goes here](./src/Screenshots/Screenshot%20-%20HomePage.png)
